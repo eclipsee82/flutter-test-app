@@ -41,13 +41,16 @@ class _FullPageItemsState extends State<FullPageItems> {
             _currentIndex = index;
           });
         },
+        backgroundColor: Colors.grey[900], // Задайте цвет панели навигации здесь
+        selectedItemColor: Colors.white, // Цвет выбранного элемента
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.format_quote_rounded),
             label: 'Мотивация',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Icon(Icons.info_outline),
             label: 'Что-то еще...',
           )
         ],

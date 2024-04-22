@@ -84,20 +84,20 @@ class _ScrollingPageState extends State<ScrollingPage> with SingleTickerProvider
                   child: Container(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height,
-                    color: Colors.deepPurple[300],
+                    color: Colors.grey[800],
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           quotes[index]['quote'] ?? '',
-                          style: TextStyle(fontSize: 20.0),
+                          style: TextStyle(fontSize: 20.0, color: Colors.white),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(height: 20),
                         Text(
                           '- ${quotes[index]['author'] ?? ''}',
-                          style: TextStyle(fontSize: 16.0, fontStyle: FontStyle.italic),
+                          style: TextStyle(fontSize: 16.0, fontStyle: FontStyle.italic, color: Colors.white),
                           textAlign: TextAlign.center,
                         ),
                       ],
